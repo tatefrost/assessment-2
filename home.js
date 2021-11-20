@@ -85,24 +85,14 @@ const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
 //     for(let i = 0; i < deliveryAreaZipCodes.length; i++){
 //         if(zipCode === deliveryAreaZipCodes[i]){
 //             return `You're in our delivery zone!`
-//         } else {
-//             return `Sorry, we can't deliver to that address`
 //         }
 //     }
+//     return `Sorry, we can't deliver to that address`
 // }
-
-// const canWeDeliver = deliveryAreaZipCodes.forEach((zip, i => {
-//     if (zip === i){
-//         return `You're in our delivery zone!`
-//     } else {
-//         return `Sorry, we can't deliver to that address`
-//     }
-// })
 
 // console.log(canWeDeliver(85205)) 
 // console.log(canWeDeliver(85207))
 
-// i have no idea i cant figure it out
 
 //////////////////PROBLEM 3////////////////////
 /* 
@@ -139,7 +129,7 @@ const deals = [
 
 //CODE HERE
 
-// console.log(deals[0].title.replace('15% Off!', `10% Off!`));
+console.log(deals[0].title.replace('15% Off!', `10% Off!`));
 
 /*
     The restaurant is going to continue its
@@ -156,4 +146,4 @@ const deals = [
 
 //CODE HERE
 
-// console.log(deals[1].desc.replace(`March`, `April`));
+console.log(deals[1].desc.replace(`March`, `April`));

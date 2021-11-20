@@ -158,11 +158,11 @@ const foodArr = [
 
 //CODE HERE
 
-const filteredFood = foodArr.filter(function(food){
-    return food.tag === 'gluten free'
-})
 
-console.log(filteredFood)
+// const filteredFood = foodArr.filter(food => food.tags.includes('gluten free'));
+
+// console.log(filteredFood);
+
 //////////////////PROBLEM 5////////////////////
 /* 
     Now let's write a function that's a little
@@ -204,12 +204,24 @@ console.log(filteredFood)
 
 //CODE HERE
 
+const filterByProperty = (property, number, type) => {
+    const filteredArray = foodArr.filter((element) =>{
+        if(type === 'above'){
+            return element[property] > number
+        } else if (type === 'below') {
+            return element[property] < number
+        } 
+    })
+    return filteredArray
+}
 
 /*
-    Invoke the `filterByProperty` function passing
-    in a value for each paramter.
+Invoke the `filterByProperty` function passing
+in a value for each paramter.
 
-    You'll have to console.log to see the filtered array
+You'll have to console.log to see the filtered array
 */
 
 //CODE HERE
+
+console.log(filterByProperty('price', 8, 'below'))

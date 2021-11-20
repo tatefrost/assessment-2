@@ -60,7 +60,7 @@ const cart = [
 //     return (cartTotal * (1 + tax)) - couponValue
 // }
 
-// console.log(calcFinalPrice(20000, 1000, .06))
+// console.log(calcFinalPrice(9.99, 2, .08))
 
 //////////////////PROBLEM 3////////////////////
 /*  
